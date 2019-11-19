@@ -21,4 +21,4 @@ const skillsReducer = (state=initState, action)=>{
     return state
 }
 
-export default skillssReducer
+export default skillsReducer

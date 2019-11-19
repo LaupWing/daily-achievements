@@ -1,11 +1,18 @@
 import React from 'react'
+import {connect} from 'react-redux'
+const Day = ({day, skills}) => {
 
-const Day = () => {
     return (
-        <div>
+        <div className="day"> 
             
         </div>
     )
 }
 
-export default Day
+const mapStateToProps = (state)=>{
+    return{
+        skills: state.skills
+    }
+}
+
+export default connect(mapStateToProps)(Day)

@@ -1,10 +1,13 @@
 import React from 'react'
-
+import Day from './Day'
 const Days = ({days}) => {
-    console.log(days)
     return (
         <div className="days">
-            
+            {days && days.map((day,index)=>{
+                return(
+                    <Day key={index} day={day}/>
+                )
+            })}
         </div>
     )
 }

@@ -6,7 +6,7 @@ class Dashboard extends Component {
     render() {
         const {days} = this.props
         return (
-            <div>
+            <div className="Dashboard">
                 <Days days={days}/>
             </div>
         )

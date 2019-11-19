@@ -18,14 +18,54 @@ const initState = [
                 },
                 {
                     skill: 'Illustrator',
-                    whatHaveILearned: ''
+                    whatHaveILearned: {
+                        title: '',
+                        description: '',
+                        sources:[
+                            {
+                                titel: '',
+                                src: '',
+                                description: ''
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        {
+            date: 'two',
+            learned: [
+                {
+                    skill: 'Illustrator',
+                    whatHaveILearned: {
+                        title: '',
+                        description: '',
+                        sources:[
+                            {
+                                titel: '',
+                                src: '',
+                                description: ''
+                            }
+                        ]
+                    }
                 },
                 {
                     skill: 'CSS',
-                    whatHaveILearned: ''
+                    whatHaveILearned: {
+                        title: '',
+                        description: '',
+                        sources:[
+                            {
+                                titel: '',
+                                src: '',
+                                description: ''
+                            }
+                        ]
+                    }
                 },
             ]
-        }
+        },
+
     ]
 
 
