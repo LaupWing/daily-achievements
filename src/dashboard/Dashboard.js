@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import Days from '../day/Days'
+
 class Dashboard extends Component {
-    
     render() {
-        console.log(this.props)
+        const {days} = this.props
         return (
             <div>
-                
+                <Days days={days}/>
             </div>
         )
     }
