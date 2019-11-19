@@ -80,3 +80,13 @@ li{
     margin: 0 10px;
     box-shadow: var(--shadow);
 }
+
+.Dashboard .day .skill-indicator{
+    width: 100%;
+    display: flex;
+}
+.Dashboard .day .skill-indicator .skill-color{
+    width: 50%;
+    height: 10px;
+    background: orange;
+}
