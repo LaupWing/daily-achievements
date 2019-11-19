@@ -131,3 +131,19 @@ a{
     color: var(--cons-color);
     list-style: var(--cons-color) circle inside;
 }
+
+.Dashboard .Today{
+    width: 600px;
+    height: 600px;
+    background: white;
+    box-shadow: var(--shadow);
+}
+
+.Dashboard .Today h2{
+    background: var(--darkBlue-color);
+    width: 100%;
+    padding: 10px 0;
+    color: rgba(255,255,255,.7);
+    font-weight: 400;
+    text-align: center;
+}
