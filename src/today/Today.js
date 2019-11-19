@@ -4,7 +4,7 @@ class Today extends Component {
     render() {
         return (
             <div className="Today">
-                
+                'Today'
             </div>
         )
     }
