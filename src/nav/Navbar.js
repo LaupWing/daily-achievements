@@ -1,9 +1,11 @@
 import React from 'react'
-
+import SignedInLinks from './SignedInLinks'
+import SignedOutLinks from './SignedOutLinks'
 const Navbar = () => {
     return (
-        <div>
-            
+        <div className="Navbar">
+            <SignedInLinks/>
+            <SignedOutLinks/>
         </div>
     )
 }

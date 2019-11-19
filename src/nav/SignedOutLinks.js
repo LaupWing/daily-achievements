@@ -2,9 +2,10 @@ import React from 'react'
 
 const SignedOutLinks = () => {
     return (
-        <div>
-            
-        </div>
+        <ul className="signed-out">
+            <li>Signup</li>
+            <li>Login</li>
+        </ul>
     )
 }
 
