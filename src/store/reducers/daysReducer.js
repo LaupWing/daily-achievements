@@ -1,9 +1,13 @@
 const initState = [
         {
-            date: 'one',
+            date: 'Tue Nov 19 2019',
+            pros: ['Worked out', 'Meditated'],
+            cons:['Didnt plan out the day'],
+            better:[],
             learned: [
                 {
                     skill: 'Photoshop',
+                    duration: '',
                     whatHaveILearned: {
                         title: '',
                         description: '',
@@ -18,6 +22,7 @@ const initState = [
                 },
                 {
                     skill: 'Illustrator',
+                    duration: '',
                     whatHaveILearned: {
                         title: '',
                         description: '',
@@ -33,13 +38,17 @@ const initState = [
             ]
         },
         {
-            date: 'two',
+            date: 'Tue Nov 18 2019',
+            pros: [],
+            cons:[],
+            better:[],
             learned: [
                 {
                     skill: 'Illustrator',
                     whatHaveILearned: {
                         title: '',
                         description: '',
+                        duration: '',
                         sources:[
                             {
                                 titel: '',
@@ -54,6 +63,7 @@ const initState = [
                     whatHaveILearned: {
                         title: '',
                         description: '',
+                        duration: '',
                         sources:[
                             {
                                 titel: '',

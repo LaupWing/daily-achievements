@@ -14,6 +14,8 @@ html {
     --lightBlue-color: #b8d8e0;
     --darkBlue-color: #6db5ca;
     --orange-color: #ff7235;
+    --cons-color: #f95a37;
+    --pros-color: #a7bf2e;
     --shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
 }
 .App{
@@ -79,6 +81,8 @@ li{
     background: white;
     margin: 0 10px;
     box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
 }
 
 .Dashboard .day .skill-indicator{
@@ -87,6 +91,31 @@ li{
 }
 .Dashboard .day .skill-indicator .skill-color{
     width: 50%;
-    height: 10px;
+    height: 5px;
     background: orange;
+}
+.Dashboard .day h2{
+    bottom: 5px;
+    margin-top: auto;
+    text-align: center;
+    opacity: .7;
+    font-weight: 600;
+    color: var(--darkBlue-color);
+    font-size: 1.1em;
+}
+.Dashboard .day-overview{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.Dashboard .day-overview li.pro{
+    color: var(--pros-color);
+    list-style: var(--pros-color) circle inside;
+}
+.Dashboard .day-overview li.con{
+    color: var(--cons-color);
+    list-style: var(--cons-color) circle inside;
 }

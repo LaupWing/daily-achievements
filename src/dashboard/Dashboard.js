@@ -1,14 +1,17 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 import Days from '../day/Days'
-
+import {Switch, Route, BrowserRouter} from 'react-router-dom'
 class Dashboard extends Component {
     render() {
-        const {days} = this.props
         return (
-            <div className="Dashboard">
-                <Days days={days}/>
-            </div>
+            <BrowserRouter>
+                <div className="Dashboard">
+                    <Switch>
+                        <Route exact path='/' component={Days}/>
+                    </Switch>
+                </div>
+            </BrowserRouter>
         )
     }
 }
