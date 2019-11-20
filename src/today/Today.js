@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Skills from './Skills'
 class Today extends Component {
     dateInString(){
         const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -13,6 +13,7 @@ class Today extends Component {
         return (
             <div className="Today">
                 <h2>{this.dateInString()}</h2>
+                <Skills/>
             </div>
         )
     }
