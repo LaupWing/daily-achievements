@@ -174,13 +174,25 @@ a{
 .Dashboard .Today .skill.doneToday{
     opacity: 1;
 }
+.Dashboard .Today .skill.active h3::before{
+    content: '';
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    z-index: -1;
+    background: orange;
+}
+.Dashboard .Today .skill.doneToday{
+    opacity: 1;
+}
 .Dashboard .Today .skill:hover{
     opacity: 1;
 }
 .Dashboard .Today .skill h3{
+    position: relative;
     width: 60px;
     height: 60px;
-    background: orange;
     border-radius: 50%;
     display: flex;
     justify-content: center;

@@ -12,7 +12,7 @@ export class Skills extends Component {
             additionalClass = 'doneToday'
         }
         if(this.state.skillActive === title){
-            additionalClass = additionalClass + ' active'
+            additionalClass = additionalClass===null? additionalClass = 'active' : additionalClass + ' active'
         }
         return additionalClass ? additionalClass : ''
     }
@@ -39,6 +39,7 @@ export class Skills extends Component {
                         )
                     })}
                 </div>
+                
             </div>
         )
     }
