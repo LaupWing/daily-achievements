@@ -2,17 +2,20 @@ const initState = [
         {
             title: 'Illustrator',
             description: '',
-            color: '#FF7D00'
+            color: '#FF7D00',
+            categories:[]
         },
         {
             title: 'Photoshop',
             description: '',
-            color: '#0DC3F8'
+            color: '#0DC3F8',
+            categories:[]
         },
         {
             title: 'Javascript',
             description: '',
-            color: '#EED818'
+            color: '#EED818',
+            categories:[]
         },
     ]
 

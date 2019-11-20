@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
+import SkillCategory from './SkillCategory'
+
 export class Skills extends Component {
     state={
         skillsToday:['Photoshop'],
@@ -22,10 +24,14 @@ export class Skills extends Component {
         },()=>{
             console.log(this.state)
         })
-        
+    }
+    compareDates = (day)=>{
+        const date1 = new Date(day.date)
+        const date2 = new Date()
+        return date1.toString().slice(0,15) === date2.toString().slice(0,15)
     }
     render() {
-        const {skills} = this.props
+        const {skills, days} = this.props
         return (
             <div className='skills'>
                 <h3>Today i learned from the skill(s):</h3>
@@ -39,14 +45,20 @@ export class Skills extends Component {
                         )
                     })}
                 </div>
-                
+                {this.state.skillActive&&                
+                    <SkillCategory 
+                        today={days.find(this.compareDates)} 
+                        skill={skills.find(sk=>sk.title===this.state.skillActive)}
+                    />
+                }
             </div>
         )
     }
 }
 const mapStateToProps = (state)=>{
     return{
-        skills: state.skills
+        skills: state.skills,
+        days: state.days
     }
 }
 export default connect(mapStateToProps)(Skills)

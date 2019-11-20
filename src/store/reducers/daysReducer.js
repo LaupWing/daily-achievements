@@ -75,6 +75,44 @@ const initState = [
                 },
             ]
         },
+        {
+            date: 'Wed Nov 20 2019',
+            pros: [],
+            cons:[],
+            better:[],
+            learned: [
+                {
+                    skill: 'Illustrator',
+                    whatHaveILearned: {
+                        title: '',
+                        description: '',
+                        duration: '',
+                        sources:[
+                            {
+                                titel: '',
+                                src: '',
+                                description: ''
+                            }
+                        ]
+                    }
+                },
+                {
+                    skill: 'CSS',
+                    whatHaveILearned: {
+                        title: '',
+                        description: '',
+                        duration: '',
+                        sources:[
+                            {
+                                titel: '',
+                                src: '',
+                                description: ''
+                            }
+                        ]
+                    }
+                },
+            ]
+        },
 
     ]
 
