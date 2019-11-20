@@ -3,7 +3,7 @@ const initState = [
             title: 'Illustrator',
             description: '',
             color: '#FF7D00',
-            categories:[]
+            categories:['Pen tool', 'Shape Builder', 'Shape Shift']
         },
         {
             title: 'Photoshop',

@@ -83,33 +83,22 @@ const initState = [
             learned: [
                 {
                     skill: 'Illustrator',
-                    whatHaveILearned: {
-                        title: '',
-                        description: '',
-                        duration: '',
-                        sources:[
-                            {
-                                titel: '',
-                                src: '',
-                                description: ''
-                            }
-                        ]
-                    }
+                    whatHaveILearned: [
+                        {
+                            category: 'Pen Tool',
+                            learned: 'Press p for pen'
+                        },
+                        {
+                            category: 'Shape Shifter',
+                            learned: 'Combine shapes'
+                        }
+                    ]
                 },
                 {
                     skill: 'CSS',
-                    whatHaveILearned: {
-                        title: '',
-                        description: '',
-                        duration: '',
-                        sources:[
-                            {
-                                titel: '',
-                                src: '',
-                                description: ''
-                            }
-                        ]
-                    }
+                    whatHaveILearned: [
+                        
+                    ]
                 },
             ]
         },
