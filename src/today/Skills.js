@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {connect} from 'react-redux'
 // import SkillCategory from './SkillCategory'
 import TodayLearned from './TodayLearned'
+import SourceList from './SourceList'
 
 export class Skills extends Component {
     state={
@@ -46,12 +47,20 @@ export class Skills extends Component {
                         )
                     })}
                 </div>
-                {this.state.skillActive&&                
-                    <TodayLearned 
-                        today={days.find(this.compareDates)} 
-                        skill={skills.find(sk=>sk.title===this.state.skillActive)}
-                    />
-                }
+                <div className="content">
+                    {this.state.skillActive&&                
+                        <TodayLearned 
+                            today={days.find(this.compareDates)} 
+                            skill={skills.find(sk=>sk.title===this.state.skillActive)}
+                        />
+                    }
+                    {this.state.skillActive&&                
+                        <SourceList 
+                            today={days.find(this.compareDates)} 
+                            skill={skills.find(sk=>sk.title===this.state.skillActive)}
+                        />
+                    }
+                </div>
             </div>
         )
     }

@@ -23,16 +23,25 @@ function TodayLearned({today, skill}) {
     }
 
     return (
-        <div className='today-learned'>
-            <h2>Categories and what i have learned today</h2>
-            {categories && categories.map(c=>{
-                return(
-                    <div className="newly-learned">
-                        <h4 style={{background:skill.color}}>{c}</h4>
-                        {corresponding(c)}
-                    </div>
-                )
-            })}
+        <div className='Today-learned'>
+            <h4>Categories and what i have learned today </h4>
+            <div className="buttons">
+                <button>Add New +</button>
+                <div className="extra">
+                    <button>Today</button>
+                    <button className='active'>All</button>
+                </div>
+            </div>
+            <div className="newly-learned-container">
+                {categories && categories.map(c=>{
+                    return(
+                        <div className="newly-learned">
+                            <h5 style={{background:skill.color}}>{c}</h5>
+                            {corresponding(c)}
+                        </div>
+                    )
+                })}
+            </div>
         </div>
     )
 }
