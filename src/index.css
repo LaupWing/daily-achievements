@@ -238,7 +238,7 @@ button{
 }
 
 .Today .today-learned{
-    width: 70%;
+    width: 80%;
     margin: auto;
     margin-top: 20px;
 }
@@ -246,9 +246,18 @@ button{
     margin-bottom: 10px;
 }
 .Today .today-learned h4{
-    background: var(--darkBlue-color);
     padding: 8px;
     color: white;
     font-weight: normal;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 5px;
+}
+.Today .today-learned p{
+    padding: 8px;
+    border-style: solid;
+    border-width: 2px;
+    width: 95%;
+    margin-left: auto;
+}
+.Today .today-learned p:last-of-type{
+    border-radius: 0 0 5px 5px;
 }
