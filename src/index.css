@@ -171,6 +171,9 @@ a{
     opacity: .3;
     cursor: pointer;
 }
+.Dashboard .Today .skill.doneToday{
+    opacity: 1;
+}
 .Dashboard .Today .skill:hover{
     opacity: 1;
 }
