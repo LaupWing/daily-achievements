@@ -141,8 +141,9 @@ button{
 }
 
 .Dashboard .Today{
-    width: 600px;
-    height: 600px;
+    max-width: 900px;
+    height: 900px;
+    width: 75vw;
     background: white;
     box-shadow: var(--shadow);
 }
@@ -238,9 +239,15 @@ button{
 }
 
 .Today .today-learned{
-    width: 80%;
-    margin: auto;
+    width: 50%;
     margin-top: 20px;
+}
+.Today .today-learned h2{
+    background: transparent;
+    font-size: 1.2em;
+    opacity: 1;
+    color: var(--darkBlue-color);
+    text-align: left;
 }
 .Today .today-learned .newly-learned{
     margin-bottom: 10px;
