@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 // import SkillCategory from './SkillCategory'
 import TodayLearned from './TodayLearned'
 import SourceList from './SourceList'
-
+import arrayformatter from '../helpers/arrayformatter'
 export class Skills extends Component {
     state={
         skillsToday:['Photoshop'],
@@ -27,11 +27,6 @@ export class Skills extends Component {
             console.log(this.state)
         })
     }
-    compareDates = (day)=>{
-        const date1 = new Date(day.date)
-        const date2 = new Date()
-        return date1.toString().slice(0,15) === date2.toString().slice(0,15)
-    }
     render() {
         const {skills, days} = this.props
         return (
@@ -50,13 +45,13 @@ export class Skills extends Component {
                 <div className="content">
                     {this.state.skillActive&&                
                         <TodayLearned 
-                            today={days.find(this.compareDates)} 
+                            today={days.find(arrayformatter.compareDates)} 
                             skill={skills.find(sk=>sk.title===this.state.skillActive)}
                         />
                     }
                     {this.state.skillActive&&                
                         <SourceList 
-                            today={days.find(this.compareDates)} 
+                            today={days.find(arrayformatter.compareDates)} 
                             skill={skills.find(sk=>sk.title===this.state.skillActive)}
                         />
                     }

@@ -275,6 +275,7 @@ button{
 }
 .Today .Today-learned .newly-learned{
     margin: 10px 0;
+    padding: 10px;
 }
 .Today .Today-learned .newly-learned-container{
     margin-top: 20px;

@@ -2,6 +2,10 @@ import React from 'react'
 
 function SourceList({skill, today}) {
     console.log(skill,today)
+    const getToday = skill.sources.filter(sr=>{
+        
+    })
+
     return (
         <div className='SourceList'>
             <h4>Source list of this skill</h4>
