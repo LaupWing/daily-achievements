@@ -277,6 +277,9 @@ button{
     margin: 10px 0;
     padding: 10px;
 }
+.Today .list{
+    margin: 10px 0;
+}
 .Today .Today-learned .newly-learned-container{
     margin-top: 20px;
 }
@@ -285,6 +288,29 @@ button{
     color: white;
     font-weight: normal;
     border-radius: 5px 5px 0 5px;
+}
+.Today .source{
+    border-width: 2px;
+    border-style: solid;
+    margin: 8px;
+    margin-top: 28px;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+.Today .source p{
+    font-size: .7em;
+    opacity: .5;
+}
+.Today .source .info{
+    padding: 8px;
+    padding-bottom: 2px;
+}
+.Today .source button{
+    width: 100%;
+    border-radius: 0;
+    padding: 2px;
+    font-size: .6em;
 }
 .Today .Today-learned p{
     padding: 8px;
