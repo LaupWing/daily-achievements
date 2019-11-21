@@ -76,7 +76,7 @@ const initState = [
             ]
         },
         {
-            date: 'Wed Nov 20 2019',
+            date: 'Thu Nov 21 2019',
             pros: [],
             cons:[],
             better:[],

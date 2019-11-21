@@ -3,7 +3,31 @@ const initState = [
             title: 'Illustrator',
             description: '',
             color: '#FF7D00',
-            categories:['Pen tool', 'Shape Builder', 'Shape Shift']
+            categories:['Pen tool', 'Shape Builder', 'Shape Shift'],
+            sources:[
+                {
+                    title: 'Low Poly Illustrator Tutorial',
+                    url: 'https://www.youtube.com/watch?v=O66013QcjWY',
+                    date: 'Wed Nov 20 2019',
+                    whatHaveILearned:[
+                        {
+                            category: 'Pen Tool',
+                            learned: 'Press p for pen'
+                        }
+                    ]
+                },
+                {
+                    title: 'Create a Polygon Geometric Gemstone in Illustrator CC',
+                    url: 'https://www.youtube.com/watch?v=_C6dp5lnwVc',
+                    date: 'Thu Nov 21 2019',
+                    whatHaveILearned:[
+                        {
+                            category: 'Shape Shifter',
+                            learned: 'Combine shapes'
+                        }
+                    ]
+                },
+            ]
         },
         {
             title: 'Photoshop',

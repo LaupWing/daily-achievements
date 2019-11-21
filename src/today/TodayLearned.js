@@ -5,6 +5,7 @@ function TodayLearned({today, skill}) {
     const onlyUnique = (value, index, self)=> { 
         return self.indexOf(value) === index;
     }
+    console.log(today,skill)
     const skillToday = today.learned
         .find(l=>l.skill === skill.title)
 
