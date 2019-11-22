@@ -19,7 +19,7 @@ const initState = [
                 {
                     title: 'Create a Polygon Geometric Gemstone in Illustrator CC',
                     url: 'https://www.youtube.com/watch?v=_C6dp5lnwVc',
-                    date: 'Thu Nov 21 2019',
+                    date: 'Fri Nov 22 2019',
                     whatHaveILearned:[
                         {
                             category: 'Shape Shifter',
