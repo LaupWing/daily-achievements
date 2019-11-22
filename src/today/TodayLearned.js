@@ -10,7 +10,7 @@ class TodayLearned extends Component{
         const categoryLearned = this.skillToday().whatHaveILearned.filter(c2=>c2.category === c)
         const pEl =  categoryLearned.map(cl=>{
             return(
-                <p style={{borderColor:skill.color}}>{cl.learned}</p>
+                <p className='learned' style={{borderColor:skill.color}}>{cl.learned}</p>
                 )
             })
             return pEl
@@ -31,7 +31,7 @@ class TodayLearned extends Component{
         const {skill} = this.props
         return (
             <div className='Today-learned'>
-                <h4>Categories and what i have learned today </h4>
+                <h4>Categories and what i learned</h4>
                 <div className="buttons">
                     <button>Add New +</button>
                     <div className="extra">
@@ -43,10 +43,14 @@ class TodayLearned extends Component{
                     {this.categories() && this.categories().map(c=>{
                         return(
                             <div className="newly-learned">
-                                <h5 style={{background:skill.color}}>{c}</h5>
+                                <div className="info">
+                                    <h5 style={{background:skill.color}}>{c}</h5>
+                                    <p style={{background:skill.color}}>Total items: {this.corresponding(c).length}</p>
+                                </div>
                                 <div className="learned-wrapper">
                                     {this.corresponding(c)}
                                 </div>
+                                <button style={{color:skill.color,borderColor:skill.color}}>More</button>
                             </div>
                         )
                     })}
