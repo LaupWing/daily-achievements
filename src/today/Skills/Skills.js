@@ -4,6 +4,8 @@ import {connect} from 'react-redux'
 import TodayLearned from './TodayLearned/TodayLearned'
 import SourceList from './Source/SourceList'
 import arrayformatter from '../../helpers/arrayformatter'
+import './Skills.css'
+
 export class Skills extends Component {
     state={
         skillsToday:['Photoshop'],

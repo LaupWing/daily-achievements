@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Skills from './Skills/Skills'
+import './Today.css'
 class Today extends Component {
     dateInString(){
         const monthNames = ["January", "February", "March", "April", "May", "June",
