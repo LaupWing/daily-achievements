@@ -1,5 +1,5 @@
 import React from 'react'
-import arrayformatter from '../helpers/arrayformatter'
+import arrayformatter from '../../../helpers/arrayformatter'
 function SourceList({skill, today}) {
     const getTodaysSources = skill.sources.filter(arrayformatter.compareDates)
     const list = getTodaysSources ? getTodaysSources.map(tsrc=>{

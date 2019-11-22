@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Skills from './Skills'
+import Skills from './Skills/Skills'
 class Today extends Component {
     dateInString(){
         const monthNames = ["January", "February", "March", "April", "May", "June",

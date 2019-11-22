@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux'
 // import SkillCategory from './SkillCategory'
-import TodayLearned from './TodayLearned'
-import SourceList from './SourceList'
-import arrayformatter from '../helpers/arrayformatter'
+import TodayLearned from './TodayLearned/TodayLearned'
+import SourceList from './Source/SourceList'
+import arrayformatter from '../../helpers/arrayformatter'
 export class Skills extends Component {
     state={
         skillsToday:['Photoshop'],
@@ -23,8 +23,6 @@ export class Skills extends Component {
     handleClick=({title})=>{
         this.setState({
             skillActive: title
-        },()=>{
-            console.log(this.state)
         })
     }
     render() {
