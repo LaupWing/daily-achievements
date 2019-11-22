@@ -40,6 +40,10 @@ a{
     padding: 10px;
     transition: .25s;
 }
+input,
+button{
+    outline: none;
+}
 button{
     background: var(--darkBlue-color);
     color: white;

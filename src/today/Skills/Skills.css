@@ -96,6 +96,11 @@
     display: flex;
     flex-direction: column;
 }
+/* When clicked on skill category to see more */
+.Today .Today-learned .newly-learned.open .learned-wrapper{
+    max-height: 1000px;
+}
+/* ------------------------------------- */
 .Today .list{
     margin: 10px 0;
 }
@@ -145,6 +150,7 @@
 .Today .Today-learned .learned-wrapper{
     max-height: 0;
     overflow: hidden;
+    transition: 1s;
 }
 .Today .info h5{
     max-width: 100%;
@@ -158,12 +164,12 @@
     padding-left: 8px;
 }
 .Today .Today-learned p.learned{
-    padding: 8px;
+    padding: 5px 8px;
     border-style: solid;
     border-width: 2px;
-    width: 95%;
     margin-left: auto;
+    font-size: .8em;
 }
 .Today .Today-learned p.learned:last-of-type{
-    border-radius: 0 0 5px 5px;
+    border-bottom: none;
 }
